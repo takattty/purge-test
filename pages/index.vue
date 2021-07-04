@@ -1,48 +1,40 @@
 <template>
   <div class="container">
     <div>
-      <H1></H1>
       <Logo />
       <h1 class="title">purge-test</h1>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green text-center"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey text-center"
-        >
-          GitHub
-        </a>
+        <a href="https://nuxtjs.org/" target="_blank" rel="noopener noreferrer" class="button--green text-center"> Documentation </a>
+        <a href="https://github.com/nuxt/nuxt.js" target="_blank" rel="noopener noreferrer" class="button--grey text-center"> GitHub </a>
       </div>
-      <Img />
-      <A />
-      <A href="#" class="bg-red-500">開発事例</A>
-      <Li />
-      <Li class="bg-red-500">開発事例</Li>
+    </div>
+    <div>
+      <!-- <ButtonLink link="./creative" msg="default ButtonLikn"></ButtonLink> -->
+      <ButtonLink href="./creative">buttonLink</ButtonLink>
+    </div>
+    <div>
+      <!-- <A /> -->
+      <a href="#" class="no-underline from-black cursor-pointer break-all hover:opacity-70 hover:duration-300 hover:ease-in_out_expo">
+        <img :src="image" alt="PARADOX" class="m-0 p-0 align-bottom" />
+      </a>
     </div>
   </div>
 </template>
 
 <script>
-import H1 from '../components/molecules/H1'
-import Img from '../components/atoms/Img'
-import A from '../components/atoms/A'
-import Li from '../components/atoms/List'
+import ButtonLink from '../components/atoms/ButtonLink'
+// import A from '../components/atoms/A'
 
 export default {
   components: {
-    H1,
-    Img,
-    A,
-    Li,
+    ButtonLink,
+    // A,
+  },
+  props: {
+    image: {
+      type: String,
+      default: 'https://picsum.photos/id/0/478/67',
+    },
   },
 }
 </script>
@@ -63,8 +55,7 @@ export default {
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;

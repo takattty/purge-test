@@ -1,14 +1,3 @@
 <template>
-  <a
-    class="
-      no-underline
-      from-black
-      cursor-pointer
-      break-all
-      hover:opacity-70
-      hover:duration-300
-      hover:ease-in-out-expo
-    "
-    ><slot>default link</slot></a
-  >
+  <a class="text-1.4rem py-15px block bg-063a80 text-white rounded-25px text-center font-bold cursor-pointer w-90per"><slot>default link</slot></a>
 </template>
