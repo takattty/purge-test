@@ -1,8 +1,11 @@
 <template>
-  <Button>
-    <!-- <a :href="link">{{ msg }}</a> -->
-    <a><slot></slot></a>
-  </Button>
+  <!-- <Button>
+    <a :href="link">{{ msg }}</a>
+   <a><slot></slot></a>
+  </Button> -->
+  <a>
+    <Button />
+  </a>
 </template>
 
 <script>
