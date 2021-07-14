@@ -1,11 +1,11 @@
 <template>
-  <!-- <Button>
+  <Button>
     <a :href="link">{{ msg }}</a>
-   <a><slot></slot></a>
-  </Button> -->
-  <a>
+    <a><slot></slot></a>
+  </Button>
+  <!-- <a>
     <Button />
-  </a>
+  </a> -->
 </template>
 
 <script>
