@@ -1,11 +1,7 @@
 <template>
   <Button>
     <a :href="link">{{ msg }}</a>
-    <a><slot></slot></a>
   </Button>
-  <!-- <a>
-    <Button />
-  </a> -->
 </template>
 
 <script>
@@ -15,9 +11,9 @@ export default {
   components: {
     Button,
   },
-  // props: {
-  //   msg: { type: String, default: 'Default msg' },
-  //   link: { type: String, default: 'https://google.com' },
-  // },
+  props: {
+    msg: { type: String, default: 'Default msg' },
+    link: { type: String, default: 'https://google.com' },
+  },
 }
 </script>
